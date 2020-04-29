@@ -1,0 +1,19 @@
+The data set contains 16 features. many of them have categorical values and id's & age have numerical values.
+Set also contains missing values in 2 of the feature
+
+TASK: to predict whether a trainee should get passed or not.
+Steps :
+    1. Used Visualizations to withdraw some pattern & relation between missing values and other features and profoundly found some!
+            used distribution plots and count plots for univariate analysis.
+            used hue and violin plots for bivariate analysis.
+    2. After missing value imputation, Feature Engineering helped for data set get prepared for Modelling -
+            used count-encoding (categorical values get replace by their count in the dataset )
+            used One-hot encoding for binary categorical variables like Gender, is_handicapped.
+    3. Normalization 
+    4. Modeling - (Logistic regression, Random forests, XG Boost)
+    5. Parameter Tuning
+            Among the above three, Random forests were the most accurate.
+            tune its 3 parameters :
+                            max_leaf_nodes
+                            max_depth
+                            n_estimators
